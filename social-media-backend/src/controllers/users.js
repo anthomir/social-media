@@ -10,4 +10,4 @@ const getUser = async (req, res) => {
     }
 };
 
-module.exports = { getUser, getUserFriends };
+module.exports = { getUser };
