@@ -18,7 +18,6 @@ connectToMongoDB()
         app.use(express.static(path.join(__dirname, 'public')));
 
         app.use('/users', usersRouter);
-        app.use('/posts', usersRouter);
 
         app.use((req, res, next) => {
             next(createError(404));
